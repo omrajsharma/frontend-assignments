@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #3F3D56;
+}
+.game-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-form input[type="number"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #3F3D56;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3F3D56;
+    background-color: #ffffff;
+    outline: none; 
+}
+.guessDesc {
+    margin-top: 8px;
+    font-size: .8rem;
+    font-weight: 300;
+    color: #3F3D56;
+}
+.game-form input[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3F3D56;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 48px;
+    font-family: monospace;
+    letter-spacing: 4px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
