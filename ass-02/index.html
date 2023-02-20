@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02 - Program Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="head rainbow rainbow_text_animated">
+            👾 Program Will Guess The Number
+        </h1>
+        <p class="desc">
+            Program will guess the number you are thinking of in the range of 1-100. You have to tell the program if the number is too high or too low.
+        </p>
+        <div class="guess-number" id="guess-number"></div>
+
+        <div class="btn-container">
+            <button class="btn btn-low" onclick="userInputHandle('low')">Too Low</button>
+            <button class="btn btn-correct" onclick="userInputHandle('correct')">Correct</button>
+            <button class="btn btn-high" onclick="userInputHandle('high')">Too High</button>
+        </div>
+
+        <p></p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
